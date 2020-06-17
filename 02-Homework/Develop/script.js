@@ -32,26 +32,25 @@ if (passwordLength < 128 || passwordLength > 8) {
   var chooseNumbers = confirm("Do you want numbers?");
 
 
-  
+
 }
-// THEN I choose a length of at least 8 characters and no more than 128 characters
-// WHEN prompted for character types to include in the password
-// THEN I choose lowercase, uppercase, numeric, and/or special characters
-// WHEN I answer each prompt
-// THEN my input should be validated and at least one character type should be selected
-// WHEN all prompts are answered
-// THEN a password is generated that matches the selected criteria
+//  I choose a length of at least 8 characters and no more than 128 characters
+// User is prompted for character types to include in the password
+// User chooses lowercase, uppercase, numeric, and/or special characters
+// User answers each prompt (T/F)
+// User input should be validated and at least one character type should be selected
+// All prompts are answered
+// Password is generated that matches the selected criteria
 
 console.log(passwordLength);
 var charCollection = "abcdefghijklmnopqrstuvwxxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*_-+0123456789";
 var password = "";
 for (var i = 0; i < passwordLength; i++) 
   password += charCollection[Math.floor(Math.random() * charCollection.length)];
-  console.log(password);
-  generateBtn.addEventListener("click", writePassword);
+  window.alert(password);
 
-// WHEN the password is generated
-// THEN the password is either displayed in an alert or written to the page
+// The password is generated
+// Password is displayed in an alert 
 // Add event listener to generate button
 // for
 
