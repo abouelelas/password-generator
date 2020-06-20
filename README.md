@@ -3,8 +3,9 @@ Created an application that generates a random password based on user-selected c
 After user answers prompts and valid input is accepted, the password generator is deployed to display a random choice password based on user imput criteria.
 
 Screenshots are included in the Assets file.
+Links to deployed pages:
 [password generator github page] (https://abouelelas.github.io/password-generator/)
-[password generator url] (https://github.com/abouelelas/password-generator)
+[password generator url] (https://abouelelas.github.io/password-generator/)
 
 ## Acceptance Criteria
 ```
