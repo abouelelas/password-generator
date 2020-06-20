@@ -1,13 +1,12 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
 
+var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
-// GIVEN I need a new, secure password
+// I need a new, secure password
 // WHEN I click the button to generate a password
 // THEN I am presented with a series of prompts for password criteria
 generateBtn.addEventListener("click", writePassword);
@@ -21,7 +20,6 @@ function generatePassword() {
   // WHEN prompted for password criteria
   // THEN I select which criteria to include in the password
   // WHEN prompted for the length of the password
-  // function userOptions()
   // 
 
   while (passwordLength < 8 || passwordLength > 128 || passwordLength == "") { //passwordValid is false
@@ -49,10 +47,6 @@ function generatePassword() {
   // User answers each prompt (T/F)
   // User input should be validated and at least one character type should be selected
   // All prompts are answered
-  // Password is generated that matches the selected criteria
-  // function generatePassword(){
-  // var userChoices = userOptions();
-
   var result = [];
   if (chooseSpecialCharacters === true) {
     result = result.concat(specialCharacters)
@@ -71,12 +65,11 @@ function generatePassword() {
   // array to  store the chosen user characters
   console.log(passwordLength);
   var userPassword = "";
-  for (var i = 0; i < passwordLength; i++){
+  for (var i = 0; i < passwordLength; i++) {
     userPassword += result[Math.floor(Math.random() * result.length)];
   }
-    //   The password is generated
-  //   Password is displayed in an alert 
-  //   Add event listener to generate button
+  //   The password is generated
+  //   Password is displayed in an alert in the password generator text box.
   return userPassword;
-  
+
 }
