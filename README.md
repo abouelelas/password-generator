@@ -4,8 +4,8 @@ After user answers prompts and valid input is accepted, the password generator i
 
 Screenshots are included in the Assets file.
 Links to deployed pages:
-[password generator github page] (https://abouelelas.github.io/password-generator/)
-[password generator url] (https://abouelelas.github.io/password-generator/)
+[password generator github page](https://abouelelas.github.io/password-generator/)
+[password generator url](https://abouelelas.github.io/password-generator/)
 
 ## Acceptance Criteria
 ```
